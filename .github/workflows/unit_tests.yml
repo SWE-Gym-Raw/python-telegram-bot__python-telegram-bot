@@ -91,7 +91,7 @@ jobs:
             .test_report_optionals.xml
 
       - name: Submit coverage
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         with:
           env_vars: OS,PYTHON
           name: ${{ matrix.os }}-${{ matrix.python-version }}
